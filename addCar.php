@@ -1,5 +1,6 @@
 <?php
  session_start(); 
+//Create a session to store the username
  $username = $_SESSION['username'];
 
  $dbHost = "academic-mysql.cc.gatech.edu";         //Location Of Database usually its localhost 
