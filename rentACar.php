@@ -15,9 +15,9 @@
 <head>
 <title>GT Car Rental: Rent a Car  </title>
 
-<body bgcolor="#000000">
+<body bgcolor="#DAF7A6">
 <center>
-<font color="#ffffff">
+<font color="#000000">
 
 
 </head>
@@ -36,23 +36,24 @@
 <form action="carAvailability.php" method="post">
 	<?php
 	if ($_SESSION['rentingSuccess'] == -1){
-		echo "Reservation Failed. You already have a car reserved at that time.<br><br>";
+		echo "Reservation Failed. You already have a car reserved at that time.";
 		$_SESSION['rentingSuccess'] = 0;
 	} else if ($_SESSION['rentingSuccess'] == 36){
-		echo "Reservation Failed. You cannot reserve a car for more than two days.<br><br>";
+		echo "Reservation Failed. You cannot reserve a car for more than two days.";
 		$_SESSION['rentingSuccess'] = 0;
 	} else if ($_SESSION['rentingSuccess'] == -13) {
-		echo "Reservation Failed. User has null fields in personal info.<br><br>";
+		echo "Reservation Failed. User has null fields in personal info.";
 		$_SESSION['rentingSuccess'] = 0;
 	}
 
  	?>
+ 	<br>
 	Pick up date & time (YYYY-MM-DD HH:MM:SS format):
 	<input type="text" name="pickup"><br>
-
+	<br>
 	Return date & time (YYYY-MM-DD HH:MM:SS format):
 	<input type="text" name="return"><br>
-
+   <br>
 	Select Location:
 	<select name="location">
 		<?php
@@ -93,6 +94,6 @@
 	
 	<input type="radio" name="searchSelection" value="searchByType">Search By Type
 	<input type="radio" name="searchSelection" value="searchByModel" checked>Search By Model<br>
-
+<br>
 	<input type="submit" name="search" value="Search">
 </form>
