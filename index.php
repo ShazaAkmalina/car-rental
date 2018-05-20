@@ -6,7 +6,7 @@
 <head>
 <title>GT Car Rental: Login</title>
 
-<body bgcolor="#000000">
+<body bgcolor="#fdc2b5">
 <center>
 <font color="#ffffff">
 
@@ -18,8 +18,9 @@
 
 <?php
 	if ($_SESSION['loginFail'] == 1) {
-			echo "Incorrect username or password<br>";
-			$_SESSION['loginFail'] = 0;
+			echo "Incorrect username or password ";
+		($_SESSION['loginFail'] = 0);
+			
 		}
 ?>
 
@@ -32,7 +33,7 @@
     <input type="submit" name="submit" value="Login">
 </form>
 
-<form action="createAccount.php" method="post">
+	<form action="createAccount.php" method="post">
     <input type="submit" name="createAccount" value="Create Account">
 </form>
 
