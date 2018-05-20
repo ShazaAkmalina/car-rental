@@ -1,2 +1,5 @@
-# car-rental
-CRS car rental system
+GTCarRental
+===========
+
+A PHP based interface for a Car Rental Service backed by a MySQL Database
+//new branch to test 
