@@ -4,7 +4,7 @@
 
 <html>
 <head>
-<title>GT Car Rental: Login</title>
+<title>Hi Car Rental: Login</title>
 
 <body bgcolor="#fdc2b5">
 <center>
